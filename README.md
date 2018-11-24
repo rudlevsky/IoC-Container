@@ -13,7 +13,7 @@ It's simple, Here are the steps:
 So let's get started!
 
 
-**1 Use Register method:
+**1. Use Register method:
 
     container.Register<ILogger, Logger>();
            
