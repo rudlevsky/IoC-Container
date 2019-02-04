@@ -84,6 +84,7 @@ namespace SimpleContainer
         public bool IsRegistered<Type>()
         => registeredTypes.ContainsKey(typeof(Type));
 
+        //Hotfixies
         private object ResolveParameter(Type type)
         {
             if (!registeredTypes.ContainsKey(type))
