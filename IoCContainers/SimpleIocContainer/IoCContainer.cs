@@ -170,6 +170,7 @@ namespace SimpleContainer
             }
         }
 
+        //Some feature changes
         private bool ValidateProperty(PropertyInfo property)
         => property.GetCustomAttributes(typeof(InitializeAttribute), false).Length > 0 ? true : false;
     }
