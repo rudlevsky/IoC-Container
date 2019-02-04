@@ -171,6 +171,7 @@ namespace SimpleContainer
         }
 
         //Some feature changes
+        //Some feature changes_2
         private bool ValidateProperty(PropertyInfo property)
         => property.GetCustomAttributes(typeof(InitializeAttribute), false).Length > 0 ? true : false;
     }
