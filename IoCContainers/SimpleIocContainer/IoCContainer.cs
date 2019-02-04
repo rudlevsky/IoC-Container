@@ -117,6 +117,7 @@ namespace SimpleContainer
             return result;
         }
 
+        //Some changes_1
         private void TryAddToInstances(Type type, object result)
         {
             if (isSingletonMode && !instances.ContainsKey(type))
@@ -125,6 +126,7 @@ namespace SimpleContainer
             }
         }
 
+        //Some changes_2
         private object TryGetSingleton(Type type)
         {
             if (isSingletonMode && instances.ContainsKey(type))
