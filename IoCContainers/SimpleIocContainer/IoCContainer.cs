@@ -126,6 +126,7 @@ namespace SimpleContainer
             }
         }
 
+        //Some changes_2
         private object TryGetSingleton(Type type)
         {
             if (isSingletonMode && instances.ContainsKey(type))
