@@ -155,6 +155,7 @@ namespace SimpleContainer
         private ParameterInfo[] GetConstructorWithLongestParameterList(Type type) =>
             type.GetConstructors().OrderByDescending(c => c.GetParameters().Length).FirstOrDefault().GetParameters();
 
+        //Release changes
         private void Initialize<T>(T value)
         {
             foreach (var prop in value.GetType().GetProperties())
